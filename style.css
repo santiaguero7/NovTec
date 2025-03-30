@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(54, 55, 66);
+    color: white;
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%2306ff00' fill-opacity='0.045'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px ;
+    font-family: "Oswald", sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* navigation */
+
+.nav-main{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+}
+
+.nav-brand{
+    width: 60px;
+    border-radius: 36PX;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* nav left */
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 30px;
+   
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 3px solid rgb(255, 255, 255);
+
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 50px;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+}
+
+.lupa{
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+}
+
+hr{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* showcase */
+
+.showcase{
+    width: 100%;
+    height: 600px;
+    background: url(Imagenes/pexels-riicardol-14683691.jpg) no-repeat center center/cover;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.h2{
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+    padding-left: 10px;
+    align-items: center;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+    margin-bottom: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #ffff;
+    border-radius: 5px ;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+    margin: 10px 10px 0 0;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+/* NEWSCARD */
+
+.newcards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.newcards img{
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.newcards h3{
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.newcards a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: upercase;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+.newcards p{
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.8); 
+}
+.newcards a:hover{
+    text-decoration: underline;
+}
+
+/* card banner */
+
+.bannercard {
+    width: 100%;
+    height: 400px;
+    background: url(Imagenes/banner.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin-bottom: 40px;
+    margin-top: 10px;
+    display: flex; 
+    border-radius: 15px;
+}
+
+.bannercard .contenido{
+    padding: 40%;
+    padding: 130px 0 0 30px;
+    color: #f2f2f2;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+
+}
+
+.bannercard p,
+.bannercard h2{
+    margin: 10px 0 10px 0;
+}
+
